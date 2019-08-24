@@ -30,9 +30,9 @@ dependencies {
 
 
 
-def isSnapshot = true
+def isSnapshot = false
 
-version '1.0.1'
+version '1.0.0'
 
 if (isSnapshot) {
     version (version + "-SNAPSHOT")
@@ -63,13 +63,13 @@ publishing {
     publications {
         mavenJava(MavenPublication) {
             from components.java
-            artifactId 'HuaWeiPublishApp'
+            artifactId 'PublishAppHuaWeiMarket'
             artifact sourcesJar {
                 classifier "sources"
             }
 
             pom {
-                name = "HuaWeiPublishApp"
+                name = "PublishAppHuaWeiMarket"
                 description = "Plug-ins that automatically publish apps to Huawei's application market"
                 url = siteUrl
                 licenses {
@@ -110,7 +110,7 @@ bintray {
     publications 'mavenJava'
     pkg {
         repo = 'maven'
-        name = 'HuaWeiPublishApp'
+        name = 'PublishAppHuaWeiMarket'
         userOrg = 'zf'
         licenses = ['Apache-2.0']
         websiteUrl = siteUrl
