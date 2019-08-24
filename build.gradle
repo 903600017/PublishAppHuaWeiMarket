@@ -40,7 +40,7 @@ if (isSnapshot) {
 
 group 'com.zf.plugins'
 
-def gitUrl = "https://github.com/903600017/HuaWeiPublishApp.git"
+def gitUrl = "https://github.com/903600017/PublishAppHuaWeiMarket.git"
 def siteUrl = gitUrl
 
 
@@ -75,7 +75,7 @@ publishing {
                 licenses {
                     license {
                         name = "The Apache License, Version 2.0"
-                        url = "https://raw.githubusercontent.com/903600017/HuaWeiPublishApp/master/LICENSE"
+                        url = "https://raw.githubusercontent.com/903600017/PublishAppHuaWeiMarket/master/LICENSE"
                     }
 
                 }
