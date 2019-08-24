@@ -1,0 +1,138 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+apply plugin: 'com.zf.plugins.GitCommand'
+apply plugin: 'com.jfrog.bintray'
+
+
+def bintrayConfigFile = new File("D:\\Users\\Lenovo\\Desktop\\APP\\buildScript\\bintrayConfig.gradle")
+if (bintrayConfigFile.exists()) {
+    apply from: bintrayConfigFile.absolutePath
+}
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+
+//    compile files('libs/HuaWeiPublishAppApi-1.0.14.jar')
+
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.6'
+
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpmime
+    compile group: 'org.apache.httpcomponents', name: 'httpmime', version: '4.5.6'
+
+
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
+
+    // https://mvnrepository.com/artifact/commons-cli/commons-cli
+    compile group: 'com.zf.publish.app.market.huawei', name: 'PublishAppHuaWeiMarketSDK', version: '1.0.2'
+}
+
+
+
+def isSnapshot = true
+
+version '1.0.1'
+
+if (isSnapshot) {
+    version (version + "-SNAPSHOT")
+}
+
+group 'com.zf.plugins'
+
+def gitUrl = "https://github.com/903600017/HuaWeiPublishApp.git"
+def siteUrl = gitUrl
+
+
+
+gitConfig {
+    versionCode 1
+    versionName version
+    changedLogFilePath file("config/log.txt").absolutePath
+    workDirPath project.projectDir.absolutePath
+}
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            artifactId 'HuaWeiPublishApp'
+            artifact sourcesJar {
+                classifier "sources"
+            }
+
+            pom {
+                name = "HuaWeiPublishApp"
+                description = "Plug-ins that automatically publish apps to Huawei's application market"
+                url = siteUrl
+                licenses {
+                    license {
+                        name = "The Apache License, Version 2.0"
+                        url = "https://raw.githubusercontent.com/903600017/HuaWeiPublishApp/master/LICENSE"
+                    }
+
+                }
+
+                developers {
+                    developer {
+                        id = "zf"
+                        name = "zf"
+                        email = "903600017@qq.com"
+                    }
+                }
+
+                organization {
+                    name = "zf"
+                    url = "https://github.com/903600017"
+                }
+            }
+        }
+    }
+
+    repositories {
+        maven {
+            url = uri('E:\\mvn-repo\\plugins\\repo')
+        }
+    }
+}
+
+
+bintray {
+    user = BINTRAY_USER
+    key = BINTRAY_API_KEY
+    publications 'mavenJava'
+    pkg {
+        repo = 'maven'
+        name = 'HuaWeiPublishApp'
+        userOrg = 'zf'
+        licenses = ['Apache-2.0']
+        websiteUrl = siteUrl
+        vcsUrl = gitUrl
+    }
+}
+
+//jar {
+//    from( zipTree(new File("E:\\workspace\\AndroidStudio\\Plugins\\HuaWeiPublishApp\\libs\\HuaWeiPublishAppApi-1.0.14.jar")))
+//        //添加依懒到打包文件
+//}
+//
+////设置maven deployer
+//uploadArchives {
+//    repositories {
+//        mavenDeployer {
+//            //设置插件的GAV参数
+//            pom.groupId = 'com.zf.plugins'
+//            pom.artifactId = 'HuaWeiPublishApp'
+//            pom.version = '1.0.101'
+//            //文件发布到下面目录
+//            repository(url: uri('E:\\mvn-repo\\plugins\\repo'))
+//        }
+//    }
+//}
