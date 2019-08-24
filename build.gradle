@@ -24,7 +24,7 @@ if (bintrayConfigFile.exists()) {
     apply from: bintrayConfigFile.absolutePath
 }
 
-def isSnapshot = false
+def isSnapshot = true
 
 version '1.0.0'
 def _versionCode = 1
@@ -35,7 +35,7 @@ if (isSnapshot) {
 
 group 'com.zf.plugins'
 
-def gitUrl = "https://github.com/903600017/XiaoMiPublishApp.git"
+def gitUrl = "https://github.com/903600017/PublishAppHuaWeiMarket.git"
 def siteUrl = gitUrl
 
 
@@ -69,7 +69,7 @@ publishing {
                 licenses {
                     license {
                         name = "The Apache License, Version 2.0"
-                        url = "https://raw.githubusercontent.com/903600017/XiaoMiPublishApp/master/LICENSE"
+                        url = "https://raw.githubusercontent.com/903600017/PublishAppHuaWeiMarket/master/LICENSE"
                     }
                 }
 

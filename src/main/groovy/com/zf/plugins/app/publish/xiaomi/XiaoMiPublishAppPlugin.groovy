@@ -1,10 +1,9 @@
 package com.zf.plugins.app.publish.xiaomi
 
-
 import org.gradle.api.Plugin
 import org.gradle.api.Project
+import com.zf.plugins.app.publish.xiaomi.task.QueryInfoTask
 import com.zf.plugins.app.publish.xiaomi.task.ApkInfoUpdateTask
-import com.zf.plugins.app.publish.xiaomi.task.AppAddTask
 import com.zf.plugins.app.publish.xiaomi.task.AppAddTask
 import com.zf.plugins.app.publish.xiaomi.task.ApkUpdateTask
 

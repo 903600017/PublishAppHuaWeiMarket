@@ -1,6 +1,6 @@
 # XiaoMiPublishApp
-[ ![Download](https://api.bintray.com/packages/zf/maven/XiaoMiPublishApp/images/download.svg) ](https://github.com/903600017/XiaoMiPublishApp/release)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://raw.githubusercontent.com/903600017/XiaoMiPublishApp/master/LICENSE)
+[ ![Download](https://api.bintray.com/packages/zf/maven/PublishAppHuaWeiMarket/images/download.svg) ](https://github.com/903600017/PublishAppHuaWeiMarket/release)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://raw.githubusercontent.com/903600017/PublishAppHuaWeiMarket/master/LICENSE)
 
 
 **XiaoMiPublishApp 自动发布应用到小米应用市场的插件。**
