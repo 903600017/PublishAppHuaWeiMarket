@@ -11,21 +11,21 @@ if (bintrayConfigFile.exists()) {
 }
 
 dependencies {
-    compile gradleApi()
-    compile localGroovy()
+    implementation gradleApi()
+    implementation localGroovy()
 
 //    compile files('libs/HuaWeiPublishAppApi-1.0.14.jar')
 
-    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.6'
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.6'
 
     // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpmime
-    compile group: 'org.apache.httpcomponents', name: 'httpmime', version: '4.5.6'
+    implementation group: 'org.apache.httpcomponents', name: 'httpmime', version: '4.5.6'
 
 
-    compile group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
 
     // https://mvnrepository.com/artifact/commons-cli/commons-cli
-    compile group: 'com.zf.publish.app.market.huawei', name: 'PublishAppHuaWeiMarketSDK', version: '1.0.2'
+    implementation group: 'com.zf.publish.app.market.huawei', name: 'PublishAppHuaWeiMarketSDK', version: '1.0.0'
 }
 
 

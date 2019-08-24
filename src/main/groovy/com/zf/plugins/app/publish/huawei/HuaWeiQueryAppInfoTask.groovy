@@ -26,7 +26,6 @@ public class HuaWeiQueryAppInfoTask extends DefaultTask {
         if (publishInfo.appId == null || publishInfo.appId.trim().length() == 0) {
             throw new GradleException("appId 不能为空")
         }
-
     }
 
     @TaskAction

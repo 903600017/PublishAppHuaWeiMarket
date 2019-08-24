@@ -6,8 +6,10 @@ import com.zf.publish.app.market.huawei.Result
 import com.zf.publish.app.market.huawei.model.data.LangType
 import org.gradle.api.DefaultTask
 import org.gradle.api.GradleException
+import com.zf.publish.app.market.huawei.http.updateLangInfo.LangInfo as HuaHeiLangInfo
 import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.TaskAction
+
 
 public class HuaWeiPublishAppTask extends DefaultTask {
 
@@ -61,14 +63,14 @@ public class HuaWeiPublishAppTask extends DefaultTask {
 
         if (appInfo.langInfos != null) {
 
-            appInfo.langInfos.each { LangInfo langInfo ->
+            appInfo.langInfos.each { def langInfo ->
 
                 LangType langType = LangType.fromLangTypeName(langInfo.name)
                 if (langType == null) {
-                    def content = Utils.getResourceContent("errorInfo.txt");
+                    def content = Utils.getResourceContent("langs.txt");
                     throw new GradleException("没有名称为${langInfo.name}的语言类型:\n${content}")
                 }
-                com.zf.publish.app.market.huawei.http.updateLangInfo.LangInfo hwLangInfo = com.zf.publish.app.market.huawei.http.updateLangInfo.LangInfo();
+                HuaHeiLangInfo hwLangInfo = new HuaHeiLangInfo();
                 if (langInfo.appName != null) {
                     hwLangInfo.setAppName(langInfo.appName)
                 }
@@ -90,7 +92,6 @@ public class HuaWeiPublishAppTask extends DefaultTask {
 
                 apkRpkInfo.addApkRpkLangInfo(langType, hwLangInfo)
             }
-
         }
 
         return apkRpkInfo;

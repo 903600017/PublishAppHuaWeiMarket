@@ -14,7 +14,6 @@ public class AppInfo {
 
     public NamedDomainObjectContainer<LangInfo> langInfos;
 
-
     public AppInfo(Project project) {
         this.langInfos = project.container(LangInfo)
     }
@@ -24,19 +23,4 @@ public class AppInfo {
         langInfos.configure(configureClosure)
     }
 
-
-    void defaultLangInfo(Action<LangInfo> action) {
-        if (this.defaultLangInfo == null) {
-            this.defaultLangInfo = new LangInfo()
-        }
-
-        action.execute(this.defaultLangInfo);
-    }
-
-    void defaultLangInfo(Closure c) {
-        if (this.defaultLangInfo == null) {
-            this.defaultLangInfo = new LangInfo()
-        }
-        org.gradle.util.ConfigureUtil.configure(c, this.defaultLangInfo);
-    }
 }
