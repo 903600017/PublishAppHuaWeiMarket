@@ -1,0 +1,195 @@
+[
+  {
+    "name": "VR",
+    "classBCategory": [
+      {"categoryId": 210, "name": "游戏 - 动作"},
+      {"categoryId": 211, "name": "游戏 - 冒险"},
+      {"categoryId": 212, "name": "游戏 - 射击"},
+      {"categoryId": 213, "name": "游戏 - 角色"},
+      {"categoryId": 214, "name": "游戏 - 策略"},
+      {"categoryId": 215, "name": "游戏 - 模拟"},
+      {"categoryId": 216, "name": "游戏 - 休闲"},
+      {"categoryId": 217, "name": "游戏 - 体育"},
+      {"categoryId": 218, "name": "游戏 - 棋牌"},
+      {"categoryId": 219, "name": "游戏 - 体验"},
+      {"categoryId": 220, "name": "应用 - 视频"},
+      {"categoryId": 221, "name": "应用 - 直播"},
+      {"categoryId": 222, "name": "应用 - 音乐"},
+      {"categoryId": 223, "name": "应用 - 旅行"},
+      {"categoryId": 224, "name": "应用 - 社交"},
+      {"categoryId": 225, "name": "应用 - 教育"},
+      {"categoryId": 226, "name": "应用 - 工具"},
+      {"categoryId": 227, "name": "应用 - 新闻"},
+      {"categoryId": 228, "name": "应用 - 购物"}
+    ]
+  },
+  {
+    "name": "实用工具",
+    "classBCategory": [
+      {"categoryId": 5, "name": "其他"},
+      {"categoryId": 129, "name": "系统"},
+      {"categoryId": 128, "name": "浏览�?"},
+      {"categoryId": 127, "name": "输入�?"},
+      {"categoryId": 130, "name": "安全"},
+      {"categoryId": 131, "name": "小工�?"}
+    ]
+  },
+  {
+    "name": "影音视听",
+    "classBCategory": [
+      {"categoryId": 27, "name": "其他"},
+      {"categoryId": 132, "name": "视频"},
+      {"categoryId": 133, "name": "直播"},
+      {"categoryId": 137, "name": "播放�?"},
+      {"categoryId": 134, "name": "音乐"},
+      {"categoryId": 135, "name": "电台"}
+    ]
+  },
+  {
+    "name": "聊天社交",
+    "classBCategory": [
+      {"categoryId": 2, "name": "其他"},
+      {"categoryId": 138, "name": "聊天"},
+      {"categoryId": 140, "name": "婚恋"},
+      {"categoryId": 141, "name": "通讯"},
+      {"categoryId": 142, "name": "交友"},
+      {"categoryId": 143, "name": "社区"}
+    ]
+  },
+  {
+    "name": "图书阅读",
+    "classBCategory": [
+      {"categoryId": 7, "name": "其他"},
+      {"categoryId": 144, "name": "听书"},
+      {"categoryId": 145, "name": "漫画"},
+      {"categoryId": 147, "name": "电子�?"},
+      {"categoryId": 148, "name": "小说"},
+      {"categoryId": 146, "name": "杂志"}
+    ]
+  },
+  {
+    "name": "学习教育",
+    "classBCategory": [
+      {"categoryId": 12, "name": "其他"},
+      {"categoryId": 149, "name": "外语"},
+      {"categoryId": 154, "name": "词典"},
+      {"categoryId": 150, "name": "驾�??"},
+      {"categoryId": 151, "name": "考试"},
+      {"categoryId": 152, "name": "教育"},
+      {"categoryId": 153, "name": "育儿"}
+    ]
+  },
+  {
+    "name": "效率办公",
+    "classBCategory": [
+      {"categoryId": 10, "name": "其他"},
+      {"categoryId": 155, "name": "办公"},
+      {"categoryId": 156, "name": "邮箱"},
+      {"categoryId": 157, "name": "笔记"},
+      {"categoryId": 159, "name": "云盘"},
+      {"categoryId": 207, "name": "日程"}
+    ]
+  },
+  {
+    "name": "时尚购物",
+    "classBCategory": [
+      {"categoryId": 9, "name": "其他"},
+      {"categoryId": 160, "name": "电商"},
+      {"categoryId": 161, "name": "团购"},
+      {"categoryId": 162, "name": "海淘"},
+      {"categoryId": 163, "name": "导购"},
+      {"categoryId": 206, "name": "时尚"}
+    ]
+  },
+  {
+    "name": "居家生活",
+    "classBCategory": [
+      {"categoryId": 4, "name": "其他"},
+      {"categoryId": 165, "name": "闹钟"},
+      {"categoryId": 169, "name": "查违�?"},
+      {"categoryId": 164, "name": "天气日历"},
+      {"categoryId": 166, "name": "美食"},
+      {"categoryId": 167, "name": "电影�?"},
+      {"categoryId": 168, "name": "房产居家"}
+    ]
+  },
+  {
+    "name": "旅行交�??",
+    "classBCategory": [
+      {"categoryId": 3, "name": "其他"},
+      {"categoryId": 170, "name": "用车"},
+      {"categoryId": 171, "name": "地图"},
+      {"categoryId": 172, "name": "旅游"},
+      {"categoryId": 173, "name": "酒店"},
+      {"categoryId": 174, "name": "票务"},
+      {"categoryId": 208, "name": "公交地铁"}
+    ]
+  },
+  {
+    "name": "摄影摄像",
+    "classBCategory": [
+      {"categoryId": 6, "name": "其他"},
+      {"categoryId": 176, "name": "美图"},
+      {"categoryId": 177, "name": "相机"},
+      {"categoryId": 178, "name": "图片分享"},
+      {"categoryId": 179, "name": "相册"},
+      {"categoryId": 180, "name": "视频"}
+    ]
+  },
+  {
+    "name": "医疗健康",
+    "classBCategory": [
+      {"categoryId": 14, "name": "其他"},
+      {"categoryId": 181, "name": "减肥"},
+      {"categoryId": 182, "name": "经期"},
+      {"categoryId": 183, "name": "养生"},
+      {"categoryId": 184, "name": "孕育"},
+      {"categoryId": 185, "name": "美容"},
+      {"categoryId": 186, "name": "医疗"}
+    ]
+  },
+  {
+    "name": "体育运动",
+    "classBCategory": [
+      {"categoryId": 8, "name": "其他"},
+      {"categoryId": 187, "name": "健身"},
+      {"categoryId": 188, "name": "计步"},
+      {"categoryId": 189, "name": "球类"},
+      {"categoryId": 190, "name": "直播"}
+    ]
+  },
+  {
+    "name": "新闻资讯",
+    "classBCategory": [
+      {"categoryId": 11, "name": "其他"},
+      {"categoryId": 191, "name": "资讯"},
+      {"categoryId": 192, "name": "科技"},
+      {"categoryId": 193, "name": "热点"},
+      {"categoryId": 194, "name": "头条"},
+      {"categoryId": 195, "name": "杂志"}
+    ]
+  },
+  {
+    "name": "娱乐消遣",
+    "classBCategory": [
+      {"categoryId": 13, "name": "其他"},
+      {"categoryId": 199, "name": "搞�??"},
+      {"categoryId": 198, "name": "小游�?"},
+      {"categoryId": 196, "name": "星座运势"},
+      {"categoryId": 197, "name": "笑话"}
+    ]
+  },
+  {
+    "name": "金融理财",
+    "classBCategory": [
+      {"categoryId": 1, "name": "其他"},
+      {"categoryId": 200, "name": "银行"},
+      {"categoryId": 201, "name": "股票"},
+      {"categoryId": 202, "name": "基金"},
+      {"categoryId": 203, "name": "彩票"},
+      {"categoryId": 204, "name": "记账"},
+      {"categoryId": 205, "name": "支付"},
+      {"categoryId": 229, "name": "贷款"}
+    ]
+  }
+]
